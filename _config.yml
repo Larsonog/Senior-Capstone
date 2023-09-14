@@ -1,13 +1,12 @@
 title: Encyclopedia Conway
 author:
-  name: Olivia Larson
+  name: Larsonog
   email: larsonog@hendrix.edu
 
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-  This is my Senior Capstone Project: Encyclopedia Conway. A website for anything and everything in Conway, Arkansas. 
-
+  An encylopedia of everything going on in Conway, Arkansas
 
 # Build settings
 
