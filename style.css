@@ -11,13 +11,28 @@ body {
     font-size: 100px;
     margin-left: 20px;
   }
-  input{
+  input{ /*search bar */
     color:#376E6F;
+    margin: 0px
   }
   p {
     font-family: "Lucida Console", "Courier New", monospace;
+    margin-left: 50px;
   }
   nav{
     font-family: "Lucida Console", "Courier New", monospace;
+    margin: 1%;
   }
+
   
+  form{ /*for search bar spacing*/
+    margin-top: 100px;
+    margin-right: 50px;
+  }
+  div { /*keeps title and search bar in same area*/
+    display: flex;
+    justify-content: space-between;
+  }
+  button{
+    color:#376E6F
+  }
