@@ -11,3 +11,13 @@ body {
     font-size: 100px;
     margin-left: 20px;
   }
+  input{
+    color:#376E6F;
+  }
+  p {
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  nav{
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+  
