@@ -9,15 +9,16 @@
         <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
 
-       <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjXszlr_LeAZ8G9K-t0EPr39xmuZBUspY&callback=initMap&libraries=&v=weekly" defer></script>
+        <script src="./script.js"></script>
 
-       <script type="module" src="script.js"></script>
     </head>
     <body>
         <h1> Second Hand Shops</h1>
         <nav>
             <input type="button" onclick="location.href='index.html';" value="Home" />
-            <input type="button" onclick="location.href='events.html';" value="events" />
+            <input type="button" onclick="location.href='events.html';" value="Events" />
             <input type="button" onclick="location.href='roadwork.html';" value =Road Work />
             <input type="button" onclick="location.href='entertainment.html';" value="Entertainment"/>
             <input type="button" onclick="location.href='secondHandShops.html';" value="Second Hand Shops"/>
@@ -26,19 +27,33 @@
             <input type="button" onclick="location.href='walkInClinics.html';" value= "Walk in Clinics"/>
             <input type="button" onclick="location.href='data.html';" value="Data" />
           </nav>
-          <!--The div element for the map -->
-    <div id="map"></div>
 
-    <!-- prettier-ignore -->
+          <!-- <div id="gmp-map"></div> -->
+          
+          <!--
+          <div id="map"></div>
+          <script>
+            (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
+              key: "AIzaSyAjXszlr_LeAZ8G9K-t0EPr39xmuZBUspY",
+              v: "weekly",
+              // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
+              // Add other bootstrap parameters as needed, using camel case.
+            });
+          </script>
+          -->
+          <iframe src="https://www.google.com/maps/d/embed?mid=144zVlgOBYl1gWl06gqLXgKkEPLYKi8U&ehbc=2E312F" width="640" height="480"></iframe>
 
-    <script>
-      (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
-        key: "AIzaSyAjXszlr_LeAZ8G9K-t0EPr39xmuZBUspY",
-        v: "weekly",
-        // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
-        // Add other bootstrap parameters as needed, using camel case.
-      });
-    </script>
+          <nav>
+            <ul>
+                <li>GoodWill on Oak</li>
+                <li>Goodwill on Skyline</li>
+                <li>St. Joes Flea Market</li>
+                <li>The Go Store</li>
+                <li>Salvation Army</li>
+            </ul>
+        </nav>
+      
 
+        
   </body>
 </html>

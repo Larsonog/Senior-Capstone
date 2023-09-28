@@ -24,6 +24,9 @@ body {
     margin: 1%;
   }
 
+  nav ul{height:200px; width:18%;}
+  nav ul{overflow:hidden; overflow-y:scroll;} 
+
   
   form{ /*for search bar spacing*/
     margin-top: 100px;
@@ -33,10 +36,14 @@ body {
     display: flex;
     justify-content: space-between;
   }
+  list-div { /*for putting list in rows  */
+    display: inline;
+  }
   button{
     color:#376E6F
   }
+  
   #map {
     height: 400px; /* The height is 400 pixels */
     width: 100%; /* The width is the width of the web page */
-  }
+}
